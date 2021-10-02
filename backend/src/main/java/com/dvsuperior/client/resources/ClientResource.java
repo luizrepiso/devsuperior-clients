@@ -1,4 +1,4 @@
-package com.dvsuperior.clientes.resources;
+package com.dvsuperior.client.resources;
 
 
 import java.net.URI;
@@ -19,18 +19,18 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
-import com.dvsuperior.clientes.dto.ClientesDTO;
-import com.dvsuperior.clientes.services.ClientesService;
+import com.dvsuperior.client.dto.ClientDTO;
+import com.dvsuperior.client.services.ClientService;
 
 @RestController
 @RequestMapping(value = "/clientes")
-public class ClientesResource {
+public class ClientResource {
 
 	@Autowired
-	private ClientesService service;
+	private ClientService service;
 
 	@GetMapping
-	public ResponseEntity<Page<ClientesDTO>> findAll(
+	public ResponseEntity<Page<ClientDTO>> findAll(
 			@RequestParam(value = "page", defaultValue = "0") Integer page,
 			@RequestParam(value = "linesPerPage", defaultValue = "12") Integer linesPerPage,
 			@RequestParam(value = "direction", defaultValue = "ASC") String direction,
@@ -40,32 +40,32 @@ public class ClientesResource {
 				
 				PageRequest pageRequest = PageRequest.of(page,linesPerPage, Direction.valueOf(direction), orderBy, orderBy);
 						
-		Page<ClientesDTO> list = service.findAllPaged(pageRequest);
+		Page<ClientDTO> list = service.findAllPaged(pageRequest);
 		
 		return ResponseEntity.ok().body(list);
 	}
 
 	@GetMapping(value = "/{id}")
-	public ResponseEntity<ClientesDTO> findById(@PathVariable Long id) {
-		ClientesDTO dto = service.findById(id);
+	public ResponseEntity<ClientDTO> findById(@PathVariable Long id) {
+		ClientDTO dto = service.findById(id);
 		return ResponseEntity.ok().body(dto);
 	}
 
 	@PostMapping
-	public ResponseEntity<ClientesDTO> insert(@RequestBody ClientesDTO dto) {
+	public ResponseEntity<ClientDTO> insert(@RequestBody ClientDTO dto) {
 		dto = service.insert(dto);
 		URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}").buildAndExpand(dto.getId()).toUri();
 		return ResponseEntity.created(uri).body(dto);
 	}
 
 	@PutMapping(value = "/{id}")
-	public ResponseEntity<ClientesDTO> update(@PathVariable Long id, @RequestBody ClientesDTO dto) {
+	public ResponseEntity<ClientDTO> update(@PathVariable Long id, @RequestBody ClientDTO dto) {
 		dto = service.update(id, dto);
 		return ResponseEntity.ok().body(dto);
 	}
 
 	@DeleteMapping(value = "/{id}")
-	public ResponseEntity<ClientesDTO> delete(@PathVariable Long id) {
+	public ResponseEntity<ClientDTO> delete(@PathVariable Long id) {
 		service.delete(id);
 		return ResponseEntity.noContent().build();
 

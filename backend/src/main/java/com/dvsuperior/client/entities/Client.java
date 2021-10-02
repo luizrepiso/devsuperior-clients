@@ -1,4 +1,4 @@
-package com.dvsuperior.clientes.entities;
+package com.dvsuperior.client.entities;
 
 import java.io.Serializable;
 import java.time.Instant;
@@ -13,8 +13,8 @@ import javax.persistence.PreUpdate;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "tb_clientes")
-public class Clientes implements Serializable {
+@Table(name = "tb_client")
+public class Client implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
@@ -25,6 +25,7 @@ public class Clientes implements Serializable {
 	private Double income;
 	private Instant birthDate;
 	private Integer children;
+	private Instant date;
 
 	@Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
 	private Instant createdAt;
@@ -32,11 +33,11 @@ public class Clientes implements Serializable {
 	@Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
 	private Instant updatedAt;
 
-	public Clientes() {
+	public Client() {
 
 	}
 
-	public Clientes(Long id, String name, String cpf, Double income, Instant birthDate, Integer children) {
+	public Client(Long id, String name, String cpf, Double income, Instant birthDate, Integer children) {
 
 		this.id = id;
 		this.name = name;
@@ -113,6 +114,14 @@ public class Clientes implements Serializable {
 
 	}
 
+	public Instant getDate() {
+		return date;
+	}
+
+	public void setDate(Instant date) {
+		this.date = date;
+	}
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -129,7 +138,7 @@ public class Clientes implements Serializable {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Clientes other = (Clientes) obj;
+		Client other = (Client) obj;
 		if (id == null) {
 			if (other.id != null)
 				return false;

@@ -1,4 +1,4 @@
-package com.dvsuperior.clientes.resources.exceptions;
+package com.dvsuperior.client.resources.exceptions;
 
 import java.io.Serializable;
 import java.time.Instant;

@@ -1,4 +1,4 @@
-package com.dvsuperior.clientes.resources.exceptions;
+package com.dvsuperior.client.resources.exceptions;
 
 import java.time.Instant;
 
@@ -9,8 +9,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
-import com.dvsuperior.clientes.services.exceptions.DatabaseException;
-import com.dvsuperior.clientes.services.exceptions.ResourceNotFoundException;
+import com.dvsuperior.client.services.exceptions.DatabaseException;
+import com.dvsuperior.client.services.exceptions.ResourceNotFoundException;
 
 @ControllerAdvice
 public class ResourceExceptionHandler {
