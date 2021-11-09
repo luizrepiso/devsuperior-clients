@@ -1,20 +1,28 @@
+INSERT INTO tb_client (name, cpf, date, income, birth_Date, children) VALUES
+(Antonio Carlos Rodrigues, ‘234.345.678/56’, TIMESTAMP WITH TIME ZONE '2020-07-13T20:50:07', ‘1200.00’, TIMESTAMP WITH TIME ZONE '2021-07-19T10:00:00Z', 3);
 
-INSERT INTO tb_client (name, cpf, date, income, birth_Date, children) VALUES ('Antonio Carlos Rodrigues', '234.345.678/56', TIMESTAMP WITH TIME ZONE '2020-07-14T10:00:00Z', 1200.00, TIMESTAMP WITH TIME ZONE '1980-02-03T10:00:00Z', 3);
+INSERT INTO tb_client (name, cpf, date, income, birth_Date, children) VALUES
+(José João Nunes, ‘456.987.233/12’, TIMESTAMP WITH TIME ZONE '2020-07-13T20:50:07', 2530.00. TIMESTAMP WITH TIME ZONE '2021-10-21T10:00:00Z', 3);
 
-INSERT INTO tb_client (name, cpf, date, income, birth_Date, children) VALUES ('Vera Lucia Costa', '336.398.678/56', TIMESTAMP WITH TIME ZONE '2020-07-14T10:00:00Z', 1200.00, TIMESTAMP WITH TIME ZONE '1968-02-08T10:00:00Z', 3);
+INSERT INTO tb_client (name, cpf,date, income, birth_Date, children) VALUES
+(Matheus  Henriques, ‘023.078.100/45’, TIMESTAMP WITH TIME ZONE '2020-07-13T20:50:07.12345Z', 5678.00, TIMESTAMP WITH TIME ZONE '1965-07-08T10:00:00Z', 2); 
 
- INSERT INTO tb_client (name, cpf, date, income, birth_Date, children) VALUES ('João José Nunes', '267.378.64578/06', TIMESTAMP WITH TIME ZONE '2020-07-14T10:00:00Z', 1200.00, TIMESTAMP WITH TIME ZONE '1984-09-19T10:00:00Z', 3); 
+INSERT INTO tb_client (name, cpf, date, income, birth_Date, children) VALUES
+(Adolfo Mendes, ‘567.007.955/09’, TIMESTAMP WITH TIME ZONE '2020-07-13T20:50:07, 1876.00, TIMESTAMP WITH TIME ZONE '1966-07-15T10:00:00Z', 4);
 
-INSERT INTO tb_client (name, cpf, date, income, birth_Date, children) VALUES ('Mario Jose Soares', '234.345.678/56', TIMESTAMP WITH TIME ZONE '2020-07-14T10:00:00Z', 1200.00, TIMESTAMP WITH TIME ZONE '1995-01-24T10:00:00Z', 3); 
+INSERT INTO tb_client (name, cpf, date, income, bith_Date, children) VALUES
+(Carlos José Correia, ‘008.453.008/21’, TIMESTAMP WITH TIME ZONE '2020-07-13T20:50:07’, 7654.00, TIMESTAMP WITH TIME ZONE '1985-12-25T10:00:00Z' 25121985, 3); 
 
-INSERT INTO tb_client (name, cpf, date, income, birth_Date, children) VALUES ('Carlos José Correia', '234.345.678/56', TIMESTAMP WITH TIME ZONE '2020-07-14T10:00:00Z', 1200.00, TIMESTAMP WITH TIME ZONE '1966-07-15T10:00:00Z', 3); 
+INSERT INTO tb_client (name, cpf, date, income, bith_Date, children) VALUES
+(Maria Antonia Lopes, ‘056.490.237/28’, TIMESTAMP WITH TIME ZONE '2020-07-13T20:50:07Z', 6500.00, TIMESTAMP WITH TIME ZONE '1999-05-22T10:00:00Z', 2); 
 
-INSERT INTO tb_client (name, cpf, date, income, birth_Date, children) VALUES ('Adolfo Mendes', '234.345.678/56', TIMESTAMP WITH TIME ZONE '2020-07-14T10:00:00Z', 1200.00, TIMESTAMP WITH TIME ZONE '1977-07-23T10:00:00Z', 3);
+INSERT INTO tb_client (name, cpf, date, income, bith_Date, children) VALUES 
+(Vera Lucia Costa, ‘074.078.809/34’, TIMESTAMP WITH TIME ZONE '2020-07-13T20:50:07', 5500.00, TIMESTAMP WITH TIME ZONE '1998-09-30T10:00:00Z', 1); 
 
- INSERT INTO tb_client (name, cpf, date, income, birth_Date, children) VALUES ('Paulo Cesar Cardoso', '234.345.678/56', TIMESTAMP WITH TIME ZONE '2020-07-14T10:00:00Z', 1200.00, TIMESTAMP WITH TIME ZONE '1993-12-04T10:00:00Z', 3);
+INSERT INTO tb_client (name, cpf, date, income, bith_Date, children) VALUES 
+(Paulo Cesar Cardoso, ‘789.987.098/34’, TIMESTAMP WITH TIME ZONE '2020-07-13T20:50:07Z', 3250.00, TIMESTAMP WITH TIME ZONE '1988-12-12T10:00:00Z', 4); 
 
- INSERT INTO tb_client (name, cpf, date, income, birth_Date, children) VALUES ('Maria Antonia Lopes', '344.233.607/87', TIMESTAMP WITH TIME ZONE '2020-07-14T10:00:00Z', 1200.00, TIMESTAMP WITH TIME ZONE '1997-09-13T10:00:00Z', 3);
+INSERT INTO tb_client (name, cpf, date, income, bith_Date, children) VALUES(Antônio Carlos da Silva ‘002.345.897/87’, TIMESTAMP WITH TIME ZONE '2020-07-13T20:50:07Z', 3660.00, TIMESTAMP WITH TIME ZONE '1993-08-21T10:00:00Z', 2); 
 
- INSERT INTO tb_client (name, cpf, date, income, birth_Date, children) VALUES ('Alana Maria Ramos', '334.675.908/87', TIMESTAMP WITH TIME ZONE '2020-07-14T10:00:00Z', 1200.00, TIMESTAMP WITH TIME ZONE '1965-02-23T10:00:00Z', 3); 
+INSERT INTO tb_client (name, cpf, date, income, bith_Date, children) VALUES(Geraldo Fonseca, ‘777.875.543/23’, TIMESTAMP WITH TIME ZONE '2020-07-13T20:50:07Z', 1950.00, TIMESTAMP WITH TIME ZONE '1999-10-15T10:00:00Z', 1); 
 
-INSERT INTO tb_client (name, cpf, date, income, birth_Date, children) VALUES ('Antonio Carlos Rodrigues', '234.345.678/56', TIMESTAMP WITH TIME ZONE '2020-07-14T10:00:00Z', 1200.00, TIMESTAMP WITH TIME ZONE '1999-06-01T10:00:00Z', 3);
